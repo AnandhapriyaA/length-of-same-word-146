@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class mains extends UserMainCode{
+public static void main(String []args){
+Scanner s =new Scanner(System.in);
+System.out.println("enter string");
+String word=s.nextLine();
+compareLastWords(word);
+}}
+class UserMainCode{
+ static int compareLastWords(String text){
+int result=0;
+String list[]=text.split(" ");
+int n=list.length;
+if(list[0].length()==list[n-1].length())
+result=list[0].length();
+else 
+result=list[0].length()+(list[n-1].length());
+System.out.println(result);
+    return result;
+}}
